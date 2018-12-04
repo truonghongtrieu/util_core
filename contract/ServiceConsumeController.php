@@ -25,7 +25,7 @@ class ServiceConsumeController
     {
         foreach ($this->consumers as $consumer) {
             foreach ($consumer->aware() as $routingKey => $description) {
-                $info[$consumer->name()][$routingKey] = $description;
+                $info[get_class($consumer)][$routingKey] = $description;
             }
         }
 
