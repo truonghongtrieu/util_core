@@ -183,6 +183,7 @@ class Schema
             'locale'          => ['type' => self::T_KEYWORD],
             'title'           => ['type' => self::T_KEYWORD] + self::ANALYZED,
             'description'     => ['type' => self::T_TEXT],
+            'summary'         => ['type' => self::T_TEXT],
             'tags'            => ['type' => self::T_KEYWORD] + self::ANALYZED_AND_NORMALIZED,
             'custom_tags'     => ['type' => self::T_KEYWORD] + self::ANALYZED_AND_NORMALIZED,
             'image'           => ['type' => self::T_TEXT],
